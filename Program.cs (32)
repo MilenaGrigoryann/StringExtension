@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ExtensionMethods
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = "aaabbccc";
+            Console.WriteLine("aabbccc"._CompareTo(str));
+
+            Console.WriteLine("aaa"._IsNullOrEmpty());
+
+            string str1 = "dd";
+            Console.WriteLine(str._Concat(str1));
+
+            Console.WriteLine(str1._Contains("bb"));
+
+            Console.WriteLine(str._Equals(str1));
+
+            Console.WriteLine(str._IndexOf("a"));
+
+            char[] arr = new char['b'];
+            Console.WriteLine(str._IndexOfAny(arr));
+
+            Console.WriteLine(str._Insert(str1, 2));
+
+            string[] str3 = new string[2];
+            str3[0] = "4444";
+            str3[1] = "00000";
+            Console.WriteLine(str._Join(str3));
+
+            Console.WriteLine(str._LastIndexOf("bb"));
+
+            Console.WriteLine(str._Remove(2, 3));
+
+            Console.WriteLine(str._Replace(str, "kkkkkk"));
+
+            Console.WriteLine(str._ToUpper());
+
+            Console.WriteLine(str._ToLower());
+
+            Console.WriteLine(str._Trim());
+
+            Console.WriteLine(str._TrimEnd());
+
+            Console.WriteLine(str._TrimStart());
+        }
+    }
+}
